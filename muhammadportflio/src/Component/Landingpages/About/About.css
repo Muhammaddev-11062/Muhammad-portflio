@@ -1,0 +1,13 @@
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.about-content p {
+    color: var(--text-gray);
+    margin-bottom: 20px;
+}

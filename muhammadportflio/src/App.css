@@ -1,0 +1,152 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+:root {
+    --bg-dark: #12181b;
+    --card-bg: #1e272c;
+    --input-bg: #2a363d;
+    --primary-orange: #f39c12;
+    --text-white: #ffffff;
+    --text-gray: #b0b8c1;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    line-height: 1.6;
+}
+
+/* ==========================================
+   GLOBAL RESPONSIVE MEDIA QUERIES
+   ========================================== */
+
+/* Mobile & Tablet Screens (Max Width: 768px) */
+@media (max-width: 768px) {
+    /* 1. Header & Navbar */
+    .header {
+        padding: 15px 5%;
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block !important;
+        font-size: 24px;
+        color: var(--primary-orange, #ff6b00);
+        cursor: pointer;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-dark, #0d0d0d);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        display: none;
+        gap: 15px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    .navbar.active {
+        display: flex !important;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        padding: 8px 0;
+    }
+
+    /* 2. Home / Hero Section */
+    .home {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 30px;
+        text-align: center;
+        padding: 100px 5% 40px;
+    }
+
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .btn-group {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    /* 3. Services, Skills & Projects Grids */
+    .services-container,
+    .skills-container,
+    .projects-container {
+        grid-template-columns: 1fr;
+        padding: 20px 5%;
+        gap: 20px;
+    }
+
+    /* 4. Testimonials Section */
+    .testimonials {
+        padding: 60px 5% 40px;
+    }
+
+    .testimonials-container {
+        grid-template-columns: 1fr;
+        gap: 50px 0;
+        padding-top: 40px;
+    }
+
+    .testimonial-card {
+        padding: 45px 15px 20px;
+    }
+
+    /* 5. Contact Section */
+    .contact {
+        padding: 60px 5%;
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* 6. Footer Section */
+    .footer {
+        flex-direction: column;
+        padding: 30px 5% 20px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+/* Small Mobile Screens (Max Width: 480px) */
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 24px;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+

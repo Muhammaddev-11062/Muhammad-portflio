@@ -1,0 +1,78 @@
+
+/* Services & Skills & Projects Layout */
+.services-container, .skills-container, .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-box, .skill-card, .project-card, .testimonial-card {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.service-box:hover, .skill-card:hover, .project-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-box i, .skill-card i {
+    font-size: 35px;
+    color: var(--primary-orange);
+    margin-bottom: 15px;
+}
+
+.service-box h3, .skill-card h3, .project-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.service-box p, .skill-card p, .project-card p {
+    font-size: 13px;
+    color: var(--text-gray);
+    margin-bottom: 15px;
+}
+
+/* Projects Card Specific */
+
+/* Main Card - Iski general padding ZERO karni padegi */
+.project-card {
+    background-color: #1a1f26; /* Aapka card ka background color */
+    border-radius: 12px;
+    overflow: hidden;          /* Image ko top corners ke sath sharp cutoff aur rounded rakhega */
+    padding: 0;                /* Zero padding taake image bilkul edges se touch ho */
+}
+
+/* Image Container */
+.project-card .project-img {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    margin-bottom: 0;          /* Margin hata kar niche spacing content padding me denge */
+}
+
+/* Image Item - Edge-to-Edge Fill */
+.project-card .project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;         /* Ya 'fill' agar aap exact stretched fit chahte hain */
+    display: block;
+}
+
+/* Card Content Area - Text aur Button ko Padding dene ke liye */
+.project-card h3,
+.project-card p,
+.project-card .btn {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-card h3 {
+    margin-top: 15px;
+}
+
+.project-card .btn {
+    margin-bottom: 20px;
+}

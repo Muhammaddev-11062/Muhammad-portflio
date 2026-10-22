@@ -1,0 +1,85 @@
+/* Testimonials Section */
+.testimonials {
+    padding: 100px 8% 60px;
+}
+
+.testimonials-main-heading {
+    text-align: center;
+    font-size: 32px;
+    color: var(--primary-orange);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.section-title span {
+    color: var(--primary-orange);
+}
+
+/* Testimonials Container */
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 60px 20px;
+    padding-top: 50px;
+}
+
+/* Main Landscape Card */
+.testimonial-card {
+    position: relative;
+    background: #000000;
+    padding: 50px 20px 20px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Small Circle Image Box */
+.profile-img-box {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Main Image Fix */
+.testimonial-img {
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    border: 3px solid var(--primary-orange) !important;
+    background-color: #fff !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Content & Description */
+.testimonial-content {
+    width: 100%;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    color: var(--text-gray, #a1a1a1);
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.testimonial-card h4 {
+    color: var(--primary-orange);
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.testimonial-card span {
+    font-size: 12px;
+    color: var(--text-gray, #a1a1a1);
+}

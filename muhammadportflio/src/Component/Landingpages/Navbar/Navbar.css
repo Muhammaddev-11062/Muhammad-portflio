@@ -1,0 +1,133 @@
+/* Header & Navigation */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 8%;
+    background-color: rgba(18, 24, 27, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-white);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 55px;
+    width: auto;
+    object-fit: contain;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--text-white);
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--primary-orange);
+}
+
+.navbar .nav-btn {
+    background: var(--primary-orange);
+    color: #000;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.nav-btn:hover{
+    color: white;
+    background-color: white;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: var(--text-white);
+    cursor: pointer;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        display: none; /* Ya mobile menu display toggle */
+    }
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-orange);
+    color: #000;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--primary-orange);
+    color: var(--primary-orange);
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-orange);
+    color: #000;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.btn-sm {
+    padding: 6px 14px;
+    font-size: 12px;
+}
+
+/* General Section Styling */
+section {
+    padding: 100px 8% 60px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: var(--text-white);
+}
+
+.section-title span {
+    color: var(--primary-orange);
+}

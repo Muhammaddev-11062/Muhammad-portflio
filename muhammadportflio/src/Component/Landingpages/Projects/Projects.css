@@ -1,0 +1,41 @@
+/* Projects Card Specific */
+
+/* Main Card - Iski general padding ZERO karni padegi */
+.project-card {
+    background-color: #1a1f26; /* Aapka card ka background color */
+    border-radius: 12px;
+    overflow: hidden;          /* Image ko top corners ke sath sharp cutoff aur rounded rakhega */
+    padding: 0;                /* Zero padding taake image bilkul edges se touch ho */
+}
+
+/* Image Container */
+.project-card .project-img {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    margin-bottom: 0;          /* Margin hata kar niche spacing content padding me denge */
+}
+
+/* Image Item - Edge-to-Edge Fill */
+.project-card .project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;         /* Ya 'fill' agar aap exact stretched fit chahte hain */
+    display: block;
+}
+
+/* Card Content Area - Text aur Button ko Padding dene ke liye */
+.project-card h3,
+.project-card p,
+.project-card .btn {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-card h3 {
+    margin-top: 15px;
+}
+
+.project-card .btn {
+    margin-bottom: 20px;
+}
