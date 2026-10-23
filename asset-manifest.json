@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Muhammad-portflio/static/css/main.6dbb6df1.css",
-    "main.js": "/Muhammad-portflio/static/js/main.45061995.js",
+    "main.js": "/Muhammad-portflio/static/js/main.ed7b818c.js",
     "static/js/453.0a9fc94c.chunk.js": "/Muhammad-portflio/static/js/453.0a9fc94c.chunk.js",
     "static/media/safi.jpg": "/Muhammad-portflio/static/media/safi.72999a15b5a85b65dafa.jpg",
     "static/media/waqas.jpg": "/Muhammad-portflio/static/media/waqas.d0574fda2bb2d8da4c11.jpg",
@@ -12,11 +12,11 @@
     "static/media/muhammad.jpg": "/Muhammad-portflio/static/media/muhammad.e088a986c4d1c8bad17c.jpg",
     "index.html": "/Muhammad-portflio/index.html",
     "main.6dbb6df1.css.map": "/Muhammad-portflio/static/css/main.6dbb6df1.css.map",
-    "main.45061995.js.map": "/Muhammad-portflio/static/js/main.45061995.js.map",
+    "main.ed7b818c.js.map": "/Muhammad-portflio/static/js/main.ed7b818c.js.map",
     "453.0a9fc94c.chunk.js.map": "/Muhammad-portflio/static/js/453.0a9fc94c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6dbb6df1.css",
-    "static/js/main.45061995.js"
+    "static/js/main.ed7b818c.js"
   ]
 }
